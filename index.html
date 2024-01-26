@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Omnifood</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <script
       src="https://kit.fontawesome.com/2323039ac0.js"
@@ -11,37 +18,168 @@
     ></script>
   </head>
   <body>
-    <header class="flex justify-between items-center">
-      <div class="px-10 py-6">
-        <img class="h-[100px] w-auto" src="/img/logo.png" alt="" />
-      </div>
-      <div class="absolute top-[8%] left-[85%] text-2xl md:hidden">
-        <i class="fa-sharp fa-solid fa-bars"></i>
-      </div>
-      <div class="hidden md:block px-9">
-        <ul>
-          <li
-            class="inline-block uppercase px-1 text-[12px] sm:text-[18px] text-[#2f3630] border-b border-transparent hover:border-[#8c7ae6] border-b-2"
-          >
-            <a href="#">food delivery</a>
-          </li>
-          <li
-            class="inline-block uppercase px-1 text-[12px] sm:text-[18px] text-[#2f3630] border-b border-transparent hover:border-[#8c7ae6] border-b-2"
-          >
-            <a href="#">how it works</a>
-          </li>
-          <li
-            class="inline-block uppercase px-1 text-[12px] sm:text-[18px] text-[#2f3640] border-b border-transparent hover:border-[#8c7ae6] border-b-2"
-          >
-            <a href="#">our cities</a>
-          </li>
-          <li
-            class="inline-block uppercase px-1 text-[12px] sm:text-[18px] text-[#2f3640] border-b border-transparent hover:border-[#8c7ae6] border-b-2"
-          >
-            <a href="#">sign up</a>
-          </li>
-        </ul>
+    <header
+      style="
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+          ),
+          url(img/hero-min.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        background-attachment: fixed;
+      "
+    >
+      <div class="flex justify-between items-center">
+        <div class="py-6 absolute top-[1%] left-[7%]">
+          <img class="h-[100px] w-auto" src="/img/logo-white.png" alt="" />
+        </div>
+        <div
+          class="absolute top-[9%] left-[85%] text-3xl sm:hidden text-[#fff]"
+        >
+          <i class="fa-sharp fa-solid fa-bars"></i>
+        </div>
+        <div class="sm:block hidden absolute top-[8%] left-[30%] lg:left-[55%]">
+          <ul>
+            <li
+              class="inline-block uppercase px-2 text-xl text-[#fff] border-b border-transparent hover:border-[#8c7ae6] border-b-2"
+            >
+              <a href="#">food delivery</a>
+            </li>
+            <li
+              class="inline-block uppercase px-2 text-xl text-[#fff] border-b border-transparent hover:border-[#8c7ae6] border-b-2"
+            >
+              <a href="#">how it works</a>
+            </li>
+            <li
+              class="inline-block uppercase px-2 text-[10px] sm:text-xl text-[#fff] text-[#2f3640] border-b border-transparent hover:border-[#8c7ae6] border-b-2"
+            >
+              <a href="#">our cities</a>
+            </li>
+            <li
+              class="inline-block uppercase px-2 text-[10px] sm:text-xl text-[#fff] text-[#2f3640] border-b border-transparent hover:border-[#8c7ae6] border-b-2"
+            >
+              <a href="#">sign up</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
+
+    <div class="absolute top-[40%] left-[8%]">
+      <h1
+        class="text-[#fff] mb-10 sm:text-5xl text-4xl font-light tracking-wider leading-tight"
+      >
+        GOODBYE JUNK FOOD. <br />
+        HELLO SUPER HEALTHY MEALS.
+      </h1>
+      <a
+        class="text-[#fff] bg-[#e67e22] border border-solid border-[#e67e22] py-2 px-6 mr-5 rounded-[25px] text-[18px] font-light hover:bg-[#be712d]"
+        href="#"
+        >I'm hungry</a
+      >
+      <a
+        class="text-[#e67e27] border border-solid border-[#e67e27] border-1 py-2 px-6 rounded-[25px] text-[18px] font-light hover:bg-[#be712d] hover:text-[#fff]"
+        href="#"
+        >Show me more</a
+      >
+    </div>
+    <section class="h-screen">
+      <h2
+        class="text-center text-[20px] sm:text-[40px] tracking-wider uppercase py-12"
+      >
+        Get food fast &mdash; not fast food
+      </h2>
+      <style>
+        h2::after {
+          display: block;
+          height: 2px;
+          background-color: #e67622;
+          content: " ";
+          width: 100px;
+          margin: 0 auto;
+          margin-top: 15px;
+        }
+      </style>
+      <p class="text-[22px] text-balance text-center mb-9">
+        Hello, we’re Omnifood, your new premium food delivery service. We know
+        you’re always busy. <br />
+        No time for cooking. So let us take care of that, we’re really good at
+        it, we promise!
+      </p>
+      <div
+        class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4 px-20 pt-11"
+      >
+        <div>
+          <ion-icon
+            class="text-[80px] text-[#e67622]"
+            name="infinite-outline"
+          ></ion-icon>
+          <h3 class="text-[35px] uppercase mb-3">Up to 365 days/year</h3>
+          <p class="text-[20px] leading-relaxed">
+            Never cook again! We really <br />
+            mean that. Our subscription <br />
+            plans include up to 365 <br />
+            days/year coverage. You can also <br />
+            choose to order more flexibly if <br />
+            that's your style.
+          </p>
+        </div>
+        <div>
+          <ion-icon
+            class="text-[80px] text-[#e67622]"
+            name="stopwatch-outline"
+          ></ion-icon>
+          <h3 class="text-[35px] uppercase mb-3">READY IN 20 MINUTES</h3>
+          <p class="text-[20px] leading-relaxed">
+            You're only twenty minutes <br />
+            away from your delicious and <br />
+            super healthy meals delivered <br />
+            right to your home. We work <br />
+            with the best chefs in each town <br />
+            to ensure that you're 100% happy.
+          </p>
+        </div>
+        <div>
+          <ion-icon
+            class="text-[80px] text-[#e67622]"
+            name="nutrition-outline"
+          ></ion-icon>
+          <h3 class="text-[35px] uppercase mb-3">100% ORGANIC</h3>
+          <p class="text-[20px] leading-relaxed">
+            All our vegetables are fresh, <br />
+            organic and local. Animals are <br />
+            raised without added hormones <br />
+            or antibiotics. Good for your <br />
+            health, the environment, and it <br />
+            also tastes better!
+          </p>
+        </div>
+        <div>
+          <ion-icon
+            class="text-[80px] text-[#e67622]"
+            name="cart-outline"
+          ></ion-icon>
+          <h3 class="text-[35px] uppercase mb-3">ORDER ANYTHING</h3>
+          <p class="text-[20px] leading-relaxed">
+            We don't limit your creativity, <br />
+            which means you can order <br />
+            whatever you feel like. You can <br />
+            also choose from our menu <br />
+            containing over 100 delicious <br />
+            meals. It's up to you!
+          </p>
+        </div>
+      </div>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
